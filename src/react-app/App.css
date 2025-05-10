@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
 html, body, #root {
   height: 100%;
   margin: 0;
@@ -119,4 +121,73 @@ html, body, #root {
   text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
   pointer-events: none;
   z-index: 2;
+}
+
+.army-text {
+  font-family: 'Staatliches', Arial, sans-serif;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.army-subtext {
+  font-family: 'Staatliches', Arial, sans-serif;
+  font-size: 2rem;
+  color: #ffe066;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.overlay-army {
+  position: fixed;
+  bottom: 5vh;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.styled-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(34, 34, 34, 0.95);
+  color: #ffe066;
+  font-family: 'Staatliches', Arial, sans-serif;
+  font-size: 2rem;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  z-index: 100;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid #ffe066;
+}
+
+.army-input {
+  background: #222;
+  color: #ffe066;
+  border: 2px solid #ffe066;
+  font-family: 'Staatliches', Arial, sans-serif;
+  font-size: 1.2em;
+  border-radius: 4px;
+  padding: 0.1em 0.5em;
+  margin-left: 0.5em;
+  outline: none;
+  text-transform: lowercase;
+  text-align: center;
+  pointer-events: auto;
+}
+
+.army-input::placeholder {
+  color: #ffe06699;
+  opacity: 1;
 }
